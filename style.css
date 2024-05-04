@@ -17,7 +17,7 @@ body{
     background-position: center;
     overflow-x: hidden;
     overflow-y: auto;
-    /* position: relative; */
+    position: relative;
 }
 
 header{
@@ -155,7 +155,7 @@ header{
     overflow: hidden;
     transform: scale(0);
     translate: transform 0.5s ease,height 0.2s ease;
-    z-index: 4;
+    z-index: 101;
 }
 
 .wrapper.active-popup{
@@ -480,3 +480,88 @@ header{
     display: flex;
     justify-content: center;
   }
+
+  /* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Add your styles here for phones */
+  header {
+      padding: 20px;
+      justify-content: center;
+  }
+
+  /* Navbar adjustments for mobile */
+  .navbar a {
+      font-size: 0.9em;
+      margin-left: 20px;
+  }
+
+  .navbar .login-b {
+      width: 100px;
+      height: 40px;
+  }
+
+  /* Slide section adjustments */
+  .slide {
+      height: 80vh;
+  }
+
+  #text {
+      font-size: 3em;
+  }
+}
+
+/* Small devices (tablets, 576px - 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Add your styles here for tablets */
+  header {
+      padding: 25px;
+  }
+
+  /* Navbar adjustments for tablets */
+  .navbar a {
+      font-size: 1em;
+      margin-left: 30px;
+  }
+
+  .navbar .login-b {
+      width: 110px;
+      height: 45px;
+  }
+
+  /* Slide section adjustments */
+  .slide {
+      height: 90vh;
+  }
+
+  #text {
+      font-size: 4em;
+  }
+}
+
+/* Medium devices (desktops, 768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  /* Add your styles here for desktops */
+  header {
+      padding: 30px;
+  }
+
+  /* Navbar adjustments for desktops */
+  .navbar a {
+      font-size: 1.1em;
+      margin-left: 35px;
+  }
+
+  .navbar .login-b {
+      width: 120px;
+      height: 50px;
+  }
+
+  /* Slide section adjustments */
+  .slide {
+      height: 95vh;
+  }
+
+  #text {
+      font-size: 4.5em;
+  }
+}
