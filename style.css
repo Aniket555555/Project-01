@@ -65,7 +65,7 @@ body {
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: #fff;
+    background: #f6ebdb;
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
@@ -323,6 +323,11 @@ section img {
 }
 
 @media (max-width: 992px) {
+    body{
+        background-image: url("images/birds.png");
+        background-size: contain;
+    }
+
     #header {
         padding: 20px;
         display: flex;
@@ -348,8 +353,11 @@ section img {
         align-items: center;
         flex-direction: column;
         width: 100%;
-        height: 100vh;
-        background: #b9f2e7;
+        height: 40vh;
+        background: #b9f2e742;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        
     }
 
     #header .navigation li {
@@ -361,6 +369,10 @@ section img {
         margin: 5px 0;
         border-radius: 30px;
         display: inline-block;
+    }
+
+    #leaf{
+        content: url("images/leaf2.png");
     }
 
     .toggle {
@@ -395,6 +407,7 @@ section img {
 
     #text {
         font-size: 2.5em;
+        color: #f8e6c5;
     }
 }
 
@@ -587,6 +600,9 @@ p .word {
 /* css for footer */
 footer{
     background-color: #021914;
+}
+footer h2{
+    color: #fff;
 }
 .footerContainer{
     width: 100%;
